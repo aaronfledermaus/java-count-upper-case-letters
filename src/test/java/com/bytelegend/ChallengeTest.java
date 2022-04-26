@@ -13,6 +13,11 @@ import java.util.stream.Stream;
 public class ChallengeTest {
     @Test
     public void test() {
+        Assertions.assertEquals(3, Challenge.countUpperCaseLetters("1A2B3C4d"));
+    }
+
+    @Test
+    public void randomTest() {
         int n = new Random().nextInt(50) + 50;
         String str =
                 IntStream.range(n, n + 20)
