@@ -14,8 +14,8 @@ public class Challenge {
     public static int countUpperCaseLetters(String s) {
         int count = 0;
         char[] chars = s.toCharArray();
-        for (char aChar : chars) {
-            if (Pattern.matches("[A-Z]", Character.toString(aChar))) {
+        for (int i = 0; i < chars.length; i++) {
+            if (Character.toString(chars[i]).matches("[A-Z]")) {
                 count++;
             }
         }
