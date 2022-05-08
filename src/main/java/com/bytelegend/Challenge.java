@@ -16,7 +16,7 @@ public class Challenge {
         char[] chars = s.toCharArray();
         for (char aChar : chars) {
             if (Pattern.matches("[A-Z]", Character.toString(aChar))) {
-                count += 1;
+                count++;
             }
         }
         return count;
