@@ -3,6 +3,7 @@ package com.bytelegend;
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(countUpperCaseLetters("AaBbCc1234ABC"));
+        System.out.println(countUpperCaseLetters("1A2B3C4d"));
     }
 
     /**
@@ -14,11 +15,9 @@ public class Challenge {
     public static int countUpperCaseLetters(String s) {
         char ch[] = s.toCharArray();
         int n = ch.length;
-        int i = 0;
-        int count = 0;
+        int i = 0, count = 0;
         do {
-            if (isNumbers(ch[i])) {
-            } else {
+            if (isBigWord(ch[i])) {
                 count++;
             }
             i++;
@@ -26,8 +25,8 @@ public class Challenge {
         return count;
     }
 
-    public static boolean isNumbers(char c) {
-        if ((int) c >= 48 && (int) c <= 57) return true;
+    public static boolean isBigWord(char c) {
+        if ((int) c >= 65 && (int) c <= 90) return true;
         else return false;
 
     }
