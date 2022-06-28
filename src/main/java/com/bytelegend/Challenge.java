@@ -26,8 +26,6 @@ public class Challenge {
     }
 
     public static boolean isBigWord(char c) {
-        if ((int) c >= 65 && (int) c <= 90) return true;
-        else return false;
-
+        return c >= 'A' && c <= 'Z';
     }
 }
