@@ -13,7 +13,7 @@ public class Challenge {
      */
     public static int countUpperCaseLetters(String s) {
         if (s == null) {
-            return null;
+            return 0;
         }
 
         char[] parts = s.toCharArray();
@@ -21,7 +21,7 @@ public class Challenge {
         int i = 0;
 
         while (i < parts.length) {
-            if (parts[i].isUpperCase) {
+            if (Character.isUpperCase(parts[i])) {
                 count++;
             }
             i++;
