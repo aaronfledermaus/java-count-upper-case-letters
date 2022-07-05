@@ -16,7 +16,7 @@ public class Challenge {
             return 0;
         }
 
-        char[] parts = s.split();
+        char[] parts = s.toCharArray();
         int count = 0;
 
         for (int i = 0; i < s.length(); i++){
