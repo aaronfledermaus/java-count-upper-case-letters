@@ -18,11 +18,13 @@ public class Challenge {
 
         char[] parts = s.toCharArray();
         int count = 0;
+        int i = 0;
 
-        for (int i = 0; i < parts.length; i++){
-            if (parts[i].isUpperCase()) {
+        while (i < parts.length) {
+            if (parts[i].isUpperCase) {
                 count++;
             }
+            i++;
         }
 
         return count;
